@@ -51,20 +51,20 @@
     }
   }
 
-  #jobs {
-    .sectionTitle {
-      grid-area: sectionTitle;
-      background: $primary-color;
-    }
-    .text {
-      grid-area: sectionText;
-    }
-    .sectionBgImg {
-      grid-area: sectionBg;
-    }
+  // #jobs {
+  //   .sectionTitle {
+  //     grid-area: sectionTitle;
+  //     background: $primary-color;
+  //   }
+  //   .text {
+  //     grid-area: sectionText;
+  //   }
+  //   .sectionBgImg {
+  //     grid-area: sectionBg;
+  //   }
 
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-areas: "sectionText sectionBg sectionTitle";
-  }
+  //   display: grid;
+  //   grid-template-columns: 1fr 1fr 1fr;
+  //   grid-template-areas: "sectionText sectionBg sectionTitle";
+  // }
 }

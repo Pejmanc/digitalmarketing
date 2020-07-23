@@ -222,6 +222,88 @@ nav {
   border-bottom: solid #e1abe1 1px;
 }
 
+#language {
+  list-style: none;
+  background: #5a5a5a;
+  color: white;
+  width: 100%;
+  margin: 1.5rem 0;
+  padding: 1.5rem 1rem;
+}
+
+#language h1 {
+  text-align: center;
+  font-size: 1.5rem;
+  font-weight: 400;
+  margin-top: 1.5rem;
+}
+
+#language li {
+  margin: 1.5rem 0;
+}
+
+#language li h3 {
+  font-size: 1rem;
+  font-weight: 100;
+}
+
+#language li .bar {
+  background: white;
+  display: block;
+  height: 10px;
+  border: 1px solid rgba(230, 20, 20, 0.3);
+  overflow: hidden;
+  box-shadow: 0 0 10px #e1abe1;
+}
+
+#language li .bar span {
+  height: 10px;
+  float: left;
+  background: #e1abe1;
+}
+
+#language li .bar .spanish {
+  width: 100%;
+  animation: spanish 2s;
+}
+
+#language li .bar .english {
+  width: 90%;
+  animation: english 2s;
+}
+
+#language li .bar .french {
+  width: 50%;
+  animation: french 2s;
+}
+
+@keyframes spanish {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 100%;
+  }
+}
+
+@keyframes english {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 90%;
+  }
+}
+
+@keyframes french {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 50%;
+  }
+}
+
 @media screen and (min-width: 1020px) {
   #navbar {
     display: flex;
@@ -270,20 +352,5 @@ nav {
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-  }
-  #jobs {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-areas: "sectionText sectionBg sectionTitle";
-  }
-  #jobs .sectionTitle {
-    grid-area: sectionTitle;
-    background: #e1abe1;
-  }
-  #jobs .text {
-    grid-area: sectionText;
-  }
-  #jobs .sectionBgImg {
-    grid-area: sectionBg;
   }
 }

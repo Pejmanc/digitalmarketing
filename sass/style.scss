@@ -146,4 +146,74 @@ nav {
   }
 }
 
+#language {
+  list-style: none;
+  background: $dark-color;
+  color: white;
+  width: 100%;
+  margin: 1.5rem 0;
+  padding: 1.5rem 1rem;
+  h1 {
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: 400;
+    margin-top: 1.5rem;
+  }
+  li {
+    margin: 1.5rem 0;
+    h3 {
+      font-size: 1rem;
+      font-weight: 100;
+    }
+    .bar {
+      background: white;
+      display: block;
+      height: 10px;
+      border: 1px solid rgba(230, 20, 20, 0.3);
+      overflow: hidden;
+      box-shadow: 0 0 10px $primary-color;
+      span {
+        height: 10px;
+        float: left;
+        background: $primary-color;
+      }
+      .spanish {
+        width: 100%;
+        animation: spanish 2s;
+      }
+      .english {
+        width: 90%;
+        animation: english 2s;
+      }
+      .french {
+        width: 50%;
+        animation: french 2s;
+      }
+      @keyframes spanish {
+        0% {
+          width: 0%;
+        }
+        100% {
+          width: 100%;
+        }
+      }
+      @keyframes english {
+        0% {
+          width: 0%;
+        }
+        100% {
+          width: 90%;
+        }
+      }
+      @keyframes french {
+        0% {
+          width: 0%;
+        }
+        100% {
+          width: 50%;
+        }
+      }
+    }
+  }
+}
 @import "largscreen";
