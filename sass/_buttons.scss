@@ -1,0 +1,48 @@
+%btn {
+  display: inline-block;
+  border-radius: 5px;
+  padding: 8px 20px;
+  margin: 5px;
+  // color: $primary-color;
+
+  // &:hover {
+  //   // transform: scale(0.98);
+  //   // color: $dark-color;
+  // }
+}
+
+.btn-primary {
+  @extend %btn;
+  background-color: lighten($primary-color, 10);
+}
+
+.btn-start {
+  padding: 0;
+  margin: 8rem;
+  height: 4rem;
+  width: 4rem;
+  text-decoration: none;
+  // background-color: $complementary-color;
+  border: solid #00ffd6 1rem;
+  border-radius: 50% 50% 5% 50%;
+  color: $dark-color;
+  vertical-align: middle;
+  line-height: 3.8rem;
+  background-color: $light-color;
+  &:hover {
+    color: lighten($dark-color, 50%);
+    font-weight: bold;
+  }
+}
+
+.btn-complementary {
+  @extend %btn;
+  background-color: $complementary-color;
+  color: $dark-color;
+}
+
+.btn-blue {
+  @extend %btn;
+  background-color: $blue-color;
+  color: $white-color;
+}

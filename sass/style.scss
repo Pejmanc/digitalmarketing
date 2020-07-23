@@ -1,0 +1,83 @@
+@import "config";
+@import "buttons";
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: $font-stack;
+  font-size: 1.1rem;
+  line-height: 1.6;
+  background-color: $white-color;
+  color: $dark-color;
+  overflow-x: hidden;
+  height: 100vh;
+}
+
+nav {
+  display: none;
+}
+
+#yearsOf {
+  .sectionBgImg {
+    width: 100%;
+    height: 200px;
+    background-image: url(/img/brandin.jpeg);
+    background-color: white;
+    height: 400px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+}
+
+#jobs,
+#certificates {
+  .sectionTitle {
+    background-color: $primary-color;
+    width: 100%;
+    height: 250px;
+    line-height: 250px;
+    text-align: center;
+    color: white;
+    font-size: 2.5rem;
+    margin-top: 1.5rem;
+    i,
+    h1 {
+      line-height: 1.5;
+      display: inline-block;
+      vertical-align: middle;
+      text-shadow: 2px 2px 4px $dark-color;
+    }
+  }
+  .text {
+    justify-content: center;
+    text-align: center;
+    .thick {
+      font-size: 1.5rem;
+      font-weight: 300;
+      margin-top: 1.5rem;
+    }
+    .thin {
+      margin: 0.5rem auto;
+      font-size: 1.3rem;
+      font-weight: 200;
+      width: max-content;
+      border-bottom: solid $primary-color 1px;
+    }
+  }
+}
+
+#certificates {
+  .thick {
+    word-wrap: normal;
+    margin: 1.5rem auto;
+    width: max-content;
+    border-bottom: solid $primary-color 1px;
+  }
+}
+
+@import "largscreen";

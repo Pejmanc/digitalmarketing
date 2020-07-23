@@ -1,0 +1,205 @@
+* {
+  box-sizing: border-box;
+  margin: 0px;
+  padding: 0px;
+}
+
+.primary-text {
+  color: #e1abe1;
+}
+
+.blue-text {
+  color: #347af7;
+}
+
+.dark-text {
+  color: #5a5a5a;
+}
+
+.btn-primary, .btn-complementary, .btn-blue {
+  display: inline-block;
+  border-radius: 5px;
+  padding: 8px 20px;
+  margin: 5px;
+}
+
+.btn-primary {
+  background-color: #eed1ee;
+}
+
+.btn-start {
+  padding: 0;
+  margin: 8rem;
+  height: 4rem;
+  width: 4rem;
+  text-decoration: none;
+  border: solid #00ffd6 1rem;
+  border-radius: 50% 50% 5% 50%;
+  color: #5a5a5a;
+  vertical-align: middle;
+  line-height: 3.8rem;
+  background-color: #fca6ea;
+}
+
+.btn-start:hover {
+  color: #dadada;
+  font-weight: bold;
+}
+
+.btn-complementary {
+  background-color: #65d5f9;
+  color: #5a5a5a;
+}
+
+.btn-blue {
+  background-color: #347af7;
+  color: white;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Montserrat", "Raleway", "sans-serif";
+  font-size: 1.1rem;
+  line-height: 1.6;
+  background-color: white;
+  color: #5a5a5a;
+  overflow-x: hidden;
+  height: 100vh;
+}
+
+nav {
+  display: none;
+}
+
+#yearsOf .sectionBgImg {
+  width: 100%;
+  height: 200px;
+  background-image: url(/img/brandin.jpeg);
+  background-color: white;
+  height: 400px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+#jobs .sectionTitle,
+#certificates .sectionTitle {
+  background-color: #e1abe1;
+  width: 100%;
+  height: 250px;
+  line-height: 250px;
+  text-align: center;
+  color: white;
+  font-size: 2.5rem;
+  margin-top: 1.5rem;
+}
+
+#jobs .sectionTitle i,
+#jobs .sectionTitle h1,
+#certificates .sectionTitle i,
+#certificates .sectionTitle h1 {
+  line-height: 1.5;
+  display: inline-block;
+  vertical-align: middle;
+  text-shadow: 2px 2px 4px #5a5a5a;
+}
+
+#jobs .text,
+#certificates .text {
+  justify-content: center;
+  text-align: center;
+}
+
+#jobs .text .thick,
+#certificates .text .thick {
+  font-size: 1.5rem;
+  font-weight: 300;
+  margin-top: 1.5rem;
+}
+
+#jobs .text .thin,
+#certificates .text .thin {
+  margin: 0.5rem auto;
+  font-size: 1.3rem;
+  font-weight: 200;
+  width: max-content;
+  border-bottom: solid #e1abe1 1px;
+}
+
+#certificates .thick {
+  word-wrap: normal;
+  margin: 1.5rem auto;
+  width: max-content;
+  border-bottom: solid #e1abe1 1px;
+}
+
+@media screen and (min-width: 1020px) {
+  #navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgba(255, 255, 255, 0.8);
+    height: 4rem;
+    width: 100%;
+    padding: 0 4rem;
+    top: 0;
+    z-index: 1;
+  }
+  #navbar a {
+    text-decoration: none;
+    color: #e1abe1;
+    margin: 0.5rem 1rem;
+    padding: 0.5rem 1rem;
+  }
+  #navbar a:hover {
+    font-weight: bold;
+  }
+  #navbar .logo {
+    font-size: 1.2rem;
+  }
+  #navbar li {
+    list-style: none;
+  }
+  #navbar ul {
+    display: flex;
+  }
+  #header {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+  #yearsOf {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    height: 80vh;
+  }
+  #yearsOf .sectionBgImg {
+    width: 100%;
+    height: 200px;
+    background-image: url(/img/brandin.jpeg);
+    background-color: white;
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  #jobs {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-areas: "sectionText sectionBg sectionTitle";
+  }
+  #jobs .sectionTitle {
+    grid-area: sectionTitle;
+    background: #e1abe1;
+  }
+  #jobs .text {
+    grid-area: sectionText;
+  }
+  #jobs .sectionBgImg {
+    grid-area: sectionBg;
+  }
+}

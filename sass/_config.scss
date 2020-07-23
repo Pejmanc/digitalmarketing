@@ -1,0 +1,27 @@
+$font-stack: "Montserrat", "Raleway", "sans-serif";
+$primary-color: #e1abe1;
+$complementary-color: #65d5f9;
+$dark-color: #5a5a5a;
+$light-color: #fca6ea;
+$white-color: white;
+$blue-color: #347af7;
+* {
+  box-sizing: border-box;
+  margin: 0px;
+  padding: 0px;
+}
+
+.primary-text {
+  color: $primary-color;
+}
+.blue-text {
+  color: $blue-color;
+}
+
+.dark-text {
+  color: $dark-color;
+}
+
+// f7347a
+
+// 34f7b1

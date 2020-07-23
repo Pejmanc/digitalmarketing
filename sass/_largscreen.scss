@@ -1,0 +1,70 @@
+@media screen and (min-width: 1020px) {
+  #navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    // position: fixed;
+    background-color: rgba($color: $white-color, $alpha: 0.8);
+    height: 4rem;
+    width: 100%;
+    padding: 0 4rem;
+    top: 0;
+    z-index: 1;
+    a {
+      text-decoration: none;
+      color: $primary-color;
+      margin: 0.5rem 1rem;
+      padding: 0.5rem 1rem;
+      &:hover {
+        // color: $complementary-color;
+        font-weight: bold;
+      }
+    }
+    .logo {
+      font-size: 1.2rem;
+    }
+    li {
+      list-style: none;
+    }
+    ul {
+      display: flex;
+    }
+  }
+  #header {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+
+  #yearsOf {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    height: 80vh;
+    .sectionBgImg {
+      width: 100%;
+      height: 200px;
+      background-image: url(/img/brandin.jpeg);
+      background-color: white;
+      height: 100%;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+  }
+
+  #jobs {
+    .sectionTitle {
+      grid-area: sectionTitle;
+      background: $primary-color;
+    }
+    .text {
+      grid-area: sectionText;
+    }
+    .sectionBgImg {
+      grid-area: sectionBg;
+    }
+
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-areas: "sectionText sectionBg sectionTitle";
+  }
+}
