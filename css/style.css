@@ -76,10 +76,57 @@ nav {
   display: none;
 }
 
+#header {
+  color: white;
+  background: #e1abe1;
+  text-align: center;
+  margin: 1.5rem 0;
+}
+
+#header .header-right-top {
+  padding: 1.5rem 0;
+  font-size: 1rem;
+  font-weight: 300;
+}
+
+#header .header-right-middle {
+  padding: 1.5rem 0;
+  font-size: 3rem;
+  font-weight: 600;
+  text-shadow: 2px 2px 4px #5a5a5a;
+}
+
+#header .header-right-bottom {
+  padding: 2.5rem 0;
+}
+
+#header .header-right-bottom a {
+  text-decoration: none;
+  color: white;
+  border: 1px solid white;
+  border-radius: 0;
+  padding: 1rem 1.5rem;
+}
+
+#header .header-right-bottom a:hover {
+  color: #e1abe1;
+  background: white;
+  border: 1px solid #e1abe1;
+}
+
+#header .header-left {
+  display: none;
+}
+
+#yearsOf {
+  text-align: center;
+  margin: 1.5rem 0;
+}
+
 #yearsOf .sectionBgImg {
   width: 100%;
   height: 200px;
-  background-image: url(/img/brandin.jpeg);
+  background-image: url(/img/branding.jpeg);
   background-color: white;
   height: 400px;
   background-position: center;
@@ -87,8 +134,28 @@ nav {
   background-size: contain;
 }
 
+#yearsOf .text h1 {
+  color: #e1abe1;
+  font-size: 3rem;
+  font-weight: 300;
+}
+
+#yearsOf .text h4 {
+  color: #e1abe1;
+  font-size: 2.5rem;
+  font-weight: 300;
+}
+
+#yearsOf .text p {
+  font-size: 1.5rem;
+  font-weight: 300;
+  margin-top: 1.5rem;
+  color: #5a5a5a;
+}
+
 #jobs .sectionTitle,
-#certificates .sectionTitle {
+#certificates .sectionTitle,
+#education .sectionTitle {
   background-color: #e1abe1;
   width: 100%;
   height: 250px;
@@ -102,7 +169,9 @@ nav {
 #jobs .sectionTitle i,
 #jobs .sectionTitle h1,
 #certificates .sectionTitle i,
-#certificates .sectionTitle h1 {
+#certificates .sectionTitle h1,
+#education .sectionTitle i,
+#education .sectionTitle h1 {
   line-height: 1.5;
   display: inline-block;
   vertical-align: middle;
@@ -110,25 +179,40 @@ nav {
 }
 
 #jobs .text,
-#certificates .text {
+#certificates .text,
+#education .text {
   justify-content: center;
   text-align: center;
+  color: #5a5a5a;
 }
 
 #jobs .text .thick,
-#certificates .text .thick {
+#certificates .text .thick,
+#education .text .thick {
   font-size: 1.5rem;
-  font-weight: 300;
+  font-weight: 400;
   margin-top: 1.5rem;
 }
 
 #jobs .text .thin,
-#certificates .text .thin {
+#certificates .text .thin,
+#education .text .thin {
   margin: 0.5rem auto;
   font-size: 1.3rem;
   font-weight: 200;
   width: max-content;
   border-bottom: solid #e1abe1 1px;
+}
+
+#jobs .text .midSize,
+#jobs .text .exception,
+#certificates .text .midSize,
+#certificates .text .exception,
+#education .text .midSize,
+#education .text .exception {
+  margin: 0.5rem auto;
+  font-size: 1.3rem;
+  font-weight: 300;
 }
 
 #certificates .thick {
@@ -180,7 +264,7 @@ nav {
   #yearsOf .sectionBgImg {
     width: 100%;
     height: 200px;
-    background-image: url(/img/brandin.jpeg);
+    background-image: url(/img/branding.jpeg);
     background-color: white;
     height: 100%;
     background-position: center;

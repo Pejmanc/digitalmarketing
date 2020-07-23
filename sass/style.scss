@@ -21,21 +21,80 @@ nav {
   display: none;
 }
 
+#header {
+  color: white;
+  background: $primary-color;
+  text-align: center;
+  margin: 1.5rem 0;
+  .header-right {
+    &-top {
+      padding: 1.5rem 0;
+      font-size: 1rem;
+      font-weight: 300;
+    }
+    &-middle {
+      padding: 1.5rem 0;
+      font-size: 3rem;
+      font-weight: 600;
+      text-shadow: 2px 2px 4px $dark-color;
+    }
+    &-bottom {
+      padding: 2.5rem 0;
+      a {
+        text-decoration: none;
+        color: white;
+        border: 1px solid white;
+        border-radius: 0;
+        padding: 1rem 1.5rem;
+        &:hover {
+          color: $primary-color;
+          background: white;
+          border: 1px solid $primary-color;
+        }
+      }
+    }
+  }
+  .header-left {
+    display: none;
+  }
+}
+
 #yearsOf {
+  text-align: center;
+  margin: 1.5rem 0;
   .sectionBgImg {
     width: 100%;
     height: 200px;
-    background-image: url(/img/brandin.jpeg);
+    background-image: url(/img/branding.jpeg);
     background-color: white;
     height: 400px;
     background-position: center;
     background-repeat: no-repeat;
     background-size: contain;
   }
+  .text {
+    h1 {
+      color: $primary-color;
+      font-size: 3rem;
+      font-weight: 300;
+    }
+    h4 {
+      color: $primary-color;
+      font-size: 2.5rem;
+      font-weight: 300;
+    }
+    p {
+      font-size: 1.5rem;
+      font-weight: 300;
+      margin-top: 1.5rem;
+      color: $dark-color;
+    }
+  }
 }
 
 #jobs,
-#certificates {
+#certificates,
+#education {
   .sectionTitle {
     background-color: $primary-color;
     width: 100%;
@@ -56,9 +115,10 @@ nav {
   .text {
     justify-content: center;
     text-align: center;
+    color: $dark-color;
     .thick {
       font-size: 1.5rem;
-      font-weight: 300;
+      font-weight: 400;
       margin-top: 1.5rem;
     }
     .thin {
@@ -67,6 +127,12 @@ nav {
       font-weight: 200;
       width: max-content;
       border-bottom: solid $primary-color 1px;
+    }
+    .midSize,
+    .exception {
+      margin: 0.5rem auto;
+      font-size: 1.3rem;
+      font-weight: 300;
     }
   }
 }
