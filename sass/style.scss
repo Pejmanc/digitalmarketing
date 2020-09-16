@@ -25,7 +25,7 @@ nav {
   color: white;
   background: $primary-color;
   text-align: center;
-  margin: 1.5rem 0;
+  margin-bottom: 1.5rem;
   .header-right {
     &-top {
       padding: 1.5rem 0;
@@ -162,6 +162,8 @@ nav {
   li {
     margin: 1.5rem 0;
     h3 {
+      margin: auto;
+      width: fit-content;
       font-size: 1rem;
       font-weight: 100;
     }
@@ -169,6 +171,8 @@ nav {
       background: white;
       display: block;
       height: 10px;
+      margin: auto;
+      width: 60vw;
       border: 1px solid rgba(230, 20, 20, 0.3);
       overflow: hidden;
       box-shadow: 0 0 10px $primary-color;

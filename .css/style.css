@@ -80,7 +80,7 @@ nav {
   color: white;
   background: #e1abe1;
   text-align: center;
-  margin-bottom: 1.5rem;
+  margin: 1.5rem 0;
 }
 
 #header .header-right-top {
@@ -224,7 +224,7 @@ nav {
 
 #language {
   list-style: none;
-  background: #5a5a5a;
+  background: red;
   color: white;
   width: 100%;
   margin: 1.5rem 0;
@@ -243,8 +243,6 @@ nav {
 }
 
 #language li h3 {
-  margin: auto;
-  width: fit-content;
   font-size: 1rem;
   font-weight: 100;
 }
@@ -253,8 +251,6 @@ nav {
   background: white;
   display: block;
   height: 10px;
-  margin: auto;
-  width: 60vw;
   border: 1px solid rgba(230, 20, 20, 0.3);
   overflow: hidden;
   box-shadow: 0 0 10px #e1abe1;
